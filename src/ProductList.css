@@ -30,6 +30,13 @@ body {
     justify-items: space-between;
 }
 
+@media (max-width : 728px) {
+    .dropdown-menu{
+        width: 50%
+        
+    }
+}
+
 .navbar .ul {
     display: flex;
     justify-content: space-between;

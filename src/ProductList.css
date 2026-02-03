@@ -21,6 +21,15 @@ body {
     font-size: 20px;
 }
 
+.dropdown-menu {
+    color: white;
+    background-color: green;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    justify-items: space-between;
+}
+
 .navbar .ul {
     display: flex;
     justify-content: space-between;

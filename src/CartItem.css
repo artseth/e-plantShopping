@@ -246,3 +246,20 @@
   border-radius: 10px;
   color: white;
 }
+.delete2 {
+  display : flex;
+  padding:30px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 80px;
+  background-color: brown;
+}
+
+.delete3 {
+  display : flex;
+  padding:30px;
+  border-radius: 10px;
+  color: white;
+  margin-top: 80px;
+  background-color: brown;
+}

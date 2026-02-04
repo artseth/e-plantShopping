@@ -239,3 +239,10 @@
   transition: background-color 0.3s ease;
   margin-top: 40px;
 }
+
+.delete {
+  display : flex;
+  padding:30px;
+  border-radius: 10px;
+  color: white;
+}

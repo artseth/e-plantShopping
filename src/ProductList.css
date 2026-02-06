@@ -271,3 +271,8 @@ body {
   }
 }
 
+.delete {
+  color: white;
+  background-color: brown;
+  padding: 20px
+}

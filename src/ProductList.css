@@ -227,6 +227,10 @@ body {
   cursor: pointer;
 }
 
+.product-button.added-to-cart {
+  background-color: gray;
+}
+
 .product-button:hover {
   background-color: #45a049;
 }

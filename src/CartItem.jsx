@@ -50,8 +50,9 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleRemove = (item) => {
+    const name = item.name;
     if (item.name === name){
-      dispatch(removeItem({name:item.name}))
+      dispatch(removeItem(item))
     }
     console.log('successfully ran handleRemove')
     

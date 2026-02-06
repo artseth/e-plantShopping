@@ -266,7 +266,7 @@ function ProductList({ onHomeClick }) {
         console.log('successfully added item to cart')
 };
 
- const handleIsAdded = (product) => {
+ const handleIsAdded = () => {
     setIsAdded(prevState => !prevState)
  }
 

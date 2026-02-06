@@ -270,3 +270,9 @@ body {
     text-align: center; /* Align text to the center */
   }
 }
+
+.delete {
+  color: white;
+  background-color: brown;
+  padding: 20px
+}

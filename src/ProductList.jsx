@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem } from './CartSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
 
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
@@ -10,6 +11,14 @@ function ProductList({ onHomeClick }) {
     const [addedToCart, setAddedToCart] = useState({});
 
     const dispatch = useDispatch();
+
+    // Get cart items from Redux store
+    const cartItems = useSelector((state) => state.cart.items);
+    
+    // calculate total quantity
+    const getTotalCartQuantity = () => {
+        return cartItems.reduce((total, item) => total + (item.quantity || 1), 0);
+    };
 
     const plantsArray = [
         {
@@ -269,7 +278,7 @@ function ProductList({ onHomeClick }) {
 
 
 const calculateTotalQuantity = () => {
- return CartItems ? CartItems.reduce((total, item) => total + item.quantity, 0) : 0;
+ return cartItems ? cartItems.reduce((total, item) => total + item.quantity, 0) : 0;
   };
 
 
